@@ -1,0 +1,24 @@
+    1|       |//
+    2|       |//  SwiftLib.swift
+    3|       |//  SwiftLib
+    4|       |//
+    5|       |//  Created by Abhinav Gaurav on 21/06/19.
+    6|       |//  Copyright © 2019 Abhinav Gaurav. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import Foundation
+   10|       |
+   11|       |public final class SwiftyLib {
+   12|       |    
+   13|       |    let name = "SwiftyLib"
+   14|       |    
+   15|      1|    public func add(a: Int, b: Int) -> Int {
+   16|      1|        return a + b
+   17|      1|    }
+   18|       |    
+   19|      1|    public func sub(a: Int, b: Int) -> Int {
+   20|      1|        return a - b
+   21|      1|    }
+   22|       |    
+   23|       |}
+

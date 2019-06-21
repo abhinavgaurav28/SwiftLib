@@ -1,0 +1,29 @@
+    1|       |//
+    2|       |//  SwiftLibTests.swift
+    3|       |//  SwiftLibTests
+    4|       |//
+    5|       |//  Created by Abhinav Gaurav on 21/06/19.
+    6|       |//  Copyright © 2019 Abhinav Gaurav. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import XCTest
+   10|       |@testable import SwiftLib
+   11|       |
+   12|       |class SwiftyLibTests: XCTestCase {
+   13|       |    
+   14|       |    var swiftyLib: SwiftyLib!
+   15|       |    
+   16|      2|    override func setUp() {
+   17|      2|        swiftyLib = SwiftyLib()
+   18|      2|    }
+   19|       |    
+   20|      1|    func testAdd() {
+   21|      1|        XCTAssertEqual(swiftyLib.add(a: 1, b: 1), 2)
+   22|      1|    }
+   23|       |    
+   24|      1|    func testSub() {
+   25|      1|        XCTAssertEqual(swiftyLib.sub(a: 2, b: 1), 1)
+   26|      1|    }
+   27|       |    
+   28|       |}
+
