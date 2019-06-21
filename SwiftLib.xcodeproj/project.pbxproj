@@ -15,6 +15,7 @@
 		0A41E86A22BCAFF800836166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A41E86822BCAFF800836166 /* Main.storyboard */; };
 		0A41E86C22BCAFF900836166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A41E86B22BCAFF900836166 /* Assets.xcassets */; };
 		0A41E86F22BCAFF900836166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A41E86D22BCAFF900836166 /* LaunchScreen.storyboard */; };
+		0A41E89122BCB90600836166 /* SwiftLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41E89022BCB90600836166 /* SwiftLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		0A41E86B22BCAFF900836166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A41E86E22BCAFF900836166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A41E87022BCAFF900836166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A41E89022BCB90600836166 /* SwiftLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		0A41E83A22BCAF2D00836166 = {
 			isa = PBXGroup;
 			children = (
+				0A41E89022BCB90600836166 /* SwiftLib.swift */,
 				0A41E84622BCAF2D00836166 /* SwiftLib */,
 				0A41E85122BCAF2D00836166 /* SwiftLibTests */,
 				0A41E86322BCAFF800836166 /* SwiftLibExamples */,
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					0A41E84322BCAF2D00836166 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					0A41E84C22BCAF2D00836166 = {
 						CreatedOnToolsVersion = 10.1;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A41E89122BCB90600836166 /* SwiftLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		0A41E85922BCAF2D00836166 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.philips.SwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		0A41E85A22BCAF2D00836166 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -485,6 +493,7 @@
 		0A41E85C22BCAF2D00836166 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP68363WRJ;
 				INFOPLIST_FILE = SwiftLibTests/Info.plist;
@@ -503,6 +512,7 @@
 		0A41E85D22BCAF2D00836166 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP68363WRJ;
 				INFOPLIST_FILE = SwiftLibTests/Info.plist;
